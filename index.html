@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form action="#" method="POST">
+        
+        <fieldset>
+            <legend>Personal Details</legend>
+            
+            <p>
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="rohan">
+            </p>
+            
+            <p>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="rohan@example.com">
+            </p>
+            
+            <p>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="91+3456789066">
+            </p>
+            
+            <p>
+                <label for="start-date">Available Start Date</label>
+                <input type="date" id="start-date" name="start-date">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Application Details</legend>
+            
+            <p>
+                <label>Preferred Role:</label><br>
+                <input type="radio" id="role-frontend" name="role" value="frontend">
+                <label for="role-frontend">Frontend Developer</label><br>
+                
+                <input type="radio" id="role-backend" name="role" value="backend">
+                <label for="role-backend">Backend Developer</label>
+            </p>
+            
+            <p>
+                <label for="experience">Experience Level (1-5)</label>
+                <input type="range" id="experience" name="experience" min="1" max="5">
+            </p>
+            
+            <p>
+                <label for="referral">How did you hear about us?</label>
+                <input type="text" id="referral" name="referral" list="referral-sources">
+                <datalist id="referral-sources">
+                    <option value="LinkedIn"></option>
+                    <option value="University Career Portal"></option>
+                    <option value="Company Website"></option>
+                    <option value="Friend/Colleague"></option>
+                </datalist>
+            </p>
+            
+            <p>
+                <label for="cover-letter">Cover Letter / Statement of Interest</label>
+                <textarea id="cover-letter" name="cover-letter" rows="4" placeholder="Tell us why you are a good fit..."></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Submit Application">
+        </p>
+
+    </form>
+
+</body>
+</html>
