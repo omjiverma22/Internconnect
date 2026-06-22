@@ -1,0 +1,32 @@
+/* Styling entire form body font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333333;
+}
+
+/* Form container fallback centering using margins (No Flexbox) */
+form {
+    background-color: #ffffff;
+    color: #222222;
+    width: 450px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* Type Selectors for fieldset and legend */
+fieldset {
+    font-size: 14px;
+    color: #444444;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 18px;
+    color: #0056b3;
+}
+
+/* ID Selector - Styling one specific field */
+#name {
+    background-color: #fff9e6; 
+}
